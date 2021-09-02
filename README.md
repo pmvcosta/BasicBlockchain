@@ -34,9 +34,9 @@ npm run dev
 
 With this, I can now go on Postman and do, for instance:
 
-- GET request: localhost:3001/public-key (to get "User 1"'s public key')
-- POST request: localhost:3002/transact (to create a transaction. I write the body in JSON, containing 2 parameters: the recipient [which is the previously obtained public key] and the amount to transfer)
-- GET request: localhost:3001/transactions (or localhost:3002/transactions, should give the same result if all is working properly)
-- GET request: localhost:3001/mine-transactions (to validate the previous transaction(s))
-- GET request: localhost:3001/blocks (or localhost:3002/blocks [once again, the result should be the same] to see the newly added blocks)
-- GET request: localhost:3001/balance or localhost:3002/balance (to check out the balance of the 2 users, and make sure there are no anomalies)
+- GET request: `localhost:3001/public-key` (to get "User 1"'s public key')
+- POST request: `localhost:3002/transact` (to create a transaction. I write the body in JSON, containing 2 parameters: the recipient [which is the previously obtained public key] and the amount to transfer)
+- GET request: `localhost:3001/transactions` (or `localhost:3002/transactions`, should give the same result if all is working properly)
+- GET request: `localhost:3001/mine-transactions` (to validate the previous transaction(s))
+- GET request: `localhost:3001/blocks` (or `localhost:3002/blocks` [once again, the result should be the same] to see the newly added blocks)
+- GET request: `localhost:3001/balance` or `localhost:3002/balance` (to check out the balance of the 2 users, and make sure there are no anomalies)
